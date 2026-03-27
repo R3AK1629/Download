@@ -52,21 +52,7 @@ COOKIES_FILE = os.getenv("COOKIES_FILE", "").strip()
 
 URL_RE = re.compile(r"(https?://[^\s]+)", re.IGNORECASE)
 
-SITE_NAMES = {
-    "tiktok.com": "TikTok",
-    "vt.tiktok.com": "TikTok",
-    "vm.tiktok.com": "TikTok",
-    "douyin.com": "Douyin",
-    "facebook.com": "Facebook",
-    "fb.watch": "Facebook",
-    "instagram.com": "Instagram",
-    "youtube.com": "YouTube",
-    "youtu.be": "YouTube",
-    "x.com": "X",
-    "twitter.com": "X",
-    "xiaohongshu.com": "Rednote / Xiaohongshu",
-    "rednote.com": "Rednote / Xiaohongshu",
-}
+MODES_NEEDING_FFMPEG = {"video_hd", "video_720", "audio_mp3", "compress", "auto"}
 
 # per-user simple memory
 USER_STATE = {}
